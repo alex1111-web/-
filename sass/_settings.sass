@@ -1,0 +1,23 @@
+*, *:before, *:after
+  box-sizing: border-box/** не сработало **/
+body
+  font-family: 'Futura Book', sans-serif
+  font-size: 14px
+.section/** повторяющийся блок с видеокамерой **/
+  &-title
+    text-align: center
+    text-decoration: uppercase
+    font-family: 'Yeseva One', cursive
+    &__image
+      display: flex/** выравнивание черт **/
+      justify-content: center
+      align-items: center
+      &::after, &::before
+        content: ''
+        // display: inline-block/** чтобы появились черточки **/
+        // vertical-align: text-top/** их выравнивание **/
+        width: 32px
+        height: 2px
+        background-color: $primary
+        margin: 0 10px
+          

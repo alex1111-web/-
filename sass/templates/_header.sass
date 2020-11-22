@@ -14,11 +14,15 @@
   color: $primary
   text-transform: uppercase
 .nav
-  &__item
+  &__item/** главная проекты и т.д.  **/
     text-decoration: none
     color: $light
     text-transform: uppercase
     margin-right: 40px
+    transition: color 0.2s/** плавная смена цвета текста **/
+    &:hover
+      color: $primary
+
 .phone
   color: $primary
 .contacts
