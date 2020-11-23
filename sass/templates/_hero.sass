@@ -1,3 +1,4 @@
+// блок hero 
 .hero
   position: relative
   display: flex
@@ -18,12 +19,19 @@
     background-color: rgba($dark, .7)
   &__content/** турецкий ремонт в ростов **/
     position: relative/** блок выехал вперед затемнения **/
-    max-width: 670px/** чтобы слова переносились но новую строку **/
+    max-width: 47.85rem/** чтобы слова переносились но новую строку и rem чтобы работал адапт **/
+    margin-left: 4.28rem
+  &__title
+    margin-bottom: 1rem
   &__text
-    font-size: 22px
+    font-size: 1.57rem
+    line-height: 131%
     max-width: 500px
+    margin: 0
+    margin-bottom: 3rem
   &__button
     margin-right: 20px
+    padding: 20px 35px
   &__instagram
     position: absolute/** чтобы не вытеснять все hero вниз **/
     left: 0
@@ -37,8 +45,8 @@
     align-items: center
     left: 0
     bottom: 0
-    min-width: 247px
-    min-height: 97px
+    min-width: 17.6rem
+    min-height: 6.92rem
     background-color: $dark
     text-transform: uppercase
     text-decoration: none
@@ -64,6 +72,7 @@
     text-decoration: none/** убрать нижнее подчеркивание **/
     transform: rotate(90deg)
     line-height: 0.8/** для черты **/
+    font-size: 1.1rem
     &::after/** черта, псевдоэлемент **/
       content: ''
       width: 50px
@@ -74,6 +83,7 @@
   margin: 0
   font-family: 'Yeseva One', cursive
   text-transform: uppercase
-  font-size: 40px
+  font-size: 2.857rem
+  line-height: 1.4/** высота строки **/
   &--primary
     color: $primary
