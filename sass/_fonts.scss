@@ -1,3 +1,4 @@
+// les 16        БЭМ - les 14       Sass - les 15
 @font-face {
   font-family: 'Futura Book';
   src:
@@ -7,12 +8,12 @@
   font-style: normal;
   font-display: wrap;
   }
-  @font-face {
-    font-family: 'Futura Demi';
-    src:
-    url('../fonts/futura/FuturaDemiC.woff') format('woff'),
-    url('../fonts/futura/FuturaDemiC.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: wrap;
-    }
+@font-face {
+  font-family: 'Futura Demi';
+  src:
+  url('../fonts/futura/FuturaDemiC.woff') format('woff'),
+  url('../fonts/futura/FuturaDemiC.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+  }

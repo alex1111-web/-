@@ -1,3 +1,4 @@
+// общие настройки перенесенные из style.sass (les 17)
 *, *:before, *:after
   box-sizing: border-box/** не сработало **/
 html
@@ -5,7 +6,10 @@ html
 body
   font-family: 'Futura Book', sans-serif
   font-size: 1rem
+img
+  max-width: 100%/** les 19 (для адаптив) **/
 .section/** повторяющийся блок с видеокамерой **/
+  padding: 60px 0
   &-title
     text-align: center
     text-decoration: uppercase
