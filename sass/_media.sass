@@ -49,3 +49,14 @@
     &__scroll-down
       display: none
   
+// для блока с карточками
+@media screen and ( max-width: 660px )
+  .row
+    flex-direction: column/** делались в 1 колонну вниз **/
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 4.29rem/** отступы между карточками **/
+  .card
+    &__text
+      margin-left: 0/** приклеивание белой карточки к левой части картинки **/
