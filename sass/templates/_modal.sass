@@ -1,5 +1,7 @@
 // les 20 js модальное окно
 .modal
+  opacity: 0/** скрыть, сделать не прозрачным  **/
+  visibility: hidden/** скрыть со страницы (модальное окно) с opacity  **/
   position: fixed
   z-index: 199/** чтобы модальное окно вышло поверх навигационной панели **/
   left: 0
@@ -12,6 +14,9 @@
   display: flex
   align-items: center
   justify-content: center
+  &--visible/** для Js (модальное окно) **/
+    opacity: 1/** непрозрачность 100% **/
+    visibility: visible
   &__dialog/** оставьте заявку и т.д. **/
     position: relative
     max-width: 36.36rem
