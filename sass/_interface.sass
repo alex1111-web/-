@@ -18,3 +18,42 @@
     border: 1px solid $light
     background-color: transparent/** прозрачность кнопки **/
     color: $light
+
+.label/** из _modal  **/
+  font-size: 1.07rem
+  &--light
+    color: rgba($light, .5)
+.input
+  background-color: transparent
+  border: none
+  border-bottom: 1px solid rgba(54, 54, 54, .3)/** подчеркивание input **/
+  font-size: 1.285rem
+  color: $light
+  padding: 0.5rem 0/** раздвинуть input  **/
+  &::placeholder/** кросплатформенность плохая **/
+    color: $light
+
+.policy
+  &__checkbox
+    opacity: 0/**   прозрачность 0%  **/
+    visibility: hidden/**   скрыть checkbox   **/
+    &:checked +
+      .policy__label
+        &::before
+          background: $primary url('../img/check.svg') no-repeat center / 0.8rem
+      
+  &__label
+    display: flex/** чтобы появился весь border  **/
+    align-items: center
+    &::before
+      content: ''
+      width: 18px
+      height: 18px
+      border: 1px solid $primary
+      background-repeat: 1px
+      cursor: pointer
+      margin-right: 0.64rem
+
+
+  
+
