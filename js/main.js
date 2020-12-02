@@ -31,8 +31,26 @@ $(document).ready(function () {
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   });
+
+  var mySwiper = new Swiper('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',/* обычные точки в свайпе */
+    },
+    navigation: {/* чтобы кнопки нажимались */
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+
+  var next = $('.swiper-button-next');/* стрелка вперед */
+  var prev = $('.swiper-button-prev');/* назад */
+  var bullets = $('.swiper-pagination');
+
+  // адаптив для стрелок с булетами(если добавлять слайды)
+  next.css('left', prev.width() + 10 + bullets.width() + 10)
+  bullets.css('left', prev.width() + 10)
+
 });
 
-var offset = 300, // browser window scroll (in pixels) after which the "back to top" link is shown
-  offsetOpacity = 1200, //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
-  scrollDuration = 700;

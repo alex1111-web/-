@@ -1,4 +1,14 @@
+// насторойка сетки
 .container
   width: 85%
   max-width: 1256px
   margin: auto
+.row/** вся строка с карточками **/
+  display: flex
+  align-items: flex-start/** выравние блоков по верхнему краю **/
+  justify-content: space-between/** зазор между блоками **/
+.col
+  &-30/** карточки **/
+    flex-basis: 30%
+  &-50/** для блока со слайдерами **/
+    width: 50%

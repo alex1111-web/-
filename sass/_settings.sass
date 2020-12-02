@@ -1,6 +1,8 @@
 // общие настройки перенесенные из style.sass (les 17)
 *, *:before, *:after
   box-sizing: border-box/** не сработало **/
+  margin: 0
+  padding: 0
 html
   font-size: 14px
 body
@@ -10,10 +12,32 @@ img
   max-width: 100%/** les 19 (для адаптив) **/
 .section/** повторяющийся блок с видеокамерой **/
   padding: 60px 0
+  &--dark
+    background-color: $dark
+    color: $light
   &-title
     text-align: center
-    text-decoration: uppercase
-    font-family: 'Yeseva One', cursive
+    &--left
+      text-align: left
+    &__heading
+      text-decoration: uppercase
+      font-family: 'Yeseva One', cursive
+      line-height: 138%
+      &--primary
+        color: $primary
+    &__word/** слово "проекты" **/
+      display: flex/** сделать заголово слайдеров в 2 строки **/
+      align-items: center
+      &::after/** палочка **/
+        content: ''
+        width: 90px
+        height: 2px
+        background-color: $primary
+        margin-left: 2rem
+    &__text
+      font-size: 1.28rem
+      line-height: 2.07rem
+      max-width: 31.57rem/** ограничение для текста **/
     &__image
       display: flex/** выравнивание черт **/
       justify-content: center
