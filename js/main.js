@@ -54,6 +54,38 @@ $(document).ready(function () {
 
   new WOW().init();
 
+  // Валидация формы
+  $('.modal__form').validate({
+    errorClass: "invalid",/* какой класс присвоить эл */
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2, /* минимально кол-во букв */
+        maxlength: 15
+      },
+      userPhone: "required",/*бобязательно к заполнению */
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },/* сообщения  */
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не более пятнадцати букв"
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате: name@domain.com"
+      }
+    }
+  });
+
+  // маска для номера телефона
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 
 });
 

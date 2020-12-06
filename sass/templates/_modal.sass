@@ -44,7 +44,10 @@
     display: flex
     flex-direction: column/** имя телефон колонкой вниз **/
   &__input
-    margin-bottom: 3.428rem/** отступы imput  **/
+    &-group
+      display: flex
+      flex-direction: column/** 24 - валидация (для error) **/
+      margin-bottom: 3.428rem/** отступы imput  **/
     &:last-of-type/**  для меньшего отступа последнего input **/
       margin-bottom: 1rem
   &__policy
