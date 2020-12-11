@@ -684,6 +684,77 @@ img {
   margin-bottom: 2.78rem;
 }
 
+.team {
+  margin-bottom: 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team__section-title__image {
+  margin-top: 0.9rem;
+}
+
+.team-title {
+  margin-top: 1.64rem;
+}
+
+.team__row {
+  margin-top: 5.3rem;
+  margin-bottom: 6rem;
+  margin-left: 5.6rem;
+}
+
+.team__title {
+  max-width: 32rem;
+  margin: auto;
+  font-family: 'Futura Book', cursive;
+  font-size: 1.428rem;
+  line-height: 1.95rem;
+}
+
+.team__image {
+  position: relative;
+}
+
+.team__image::before {
+  content: '';
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+  height: 5rem;
+  width: 5rem;
+  background: #e3b873 url("../img/team/idea.svg") no-repeat center;
+}
+
+.team__image--2::before {
+  background: #e3b873 url("../img/team/idea-2.svg") no-repeat center;
+}
+
+.team__image--3::before {
+  background: #e3b873 url("../img/team/portfolio.svg") no-repeat center;
+}
+
+.card__text--team {
+  max-width: 16.64rem;
+  margin-left: 1.5rem;
+  margin-top: -6.2rem;
+  padding: 1.2rem 1.84rem;
+  text-align: center;
+}
+
+.card__list--team {
+  padding: 0 0 0 0.5rem;
+  font-size: 1.285rem;
+  line-height: 1.89rem;
+}
+
+.card__pricetag--team {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  padding: 1.214rem 3.39rem;
+}
+
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem;

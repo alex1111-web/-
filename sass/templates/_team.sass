@@ -1,0 +1,60 @@
+.team
+  margin-bottom: 14rem
+  display: flex
+  &__section-title
+    &__image
+      margin-top: 0.9rem
+  &-title
+    margin-top: 1.64rem
+  &__row
+    margin-top: 5.3rem
+    margin-bottom: 6rem
+    margin-left: 5.6rem
+  &__title
+    max-width: 32rem
+    margin: auto
+    font-family: 'Futura Book', cursive
+    font-size: 1.428rem
+    line-height: 1.95rem
+  &__image
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: -2.5rem
+      left: -2.5rem
+      height: 5rem
+      width: 5rem
+      background: $primary url("../img/team/idea.svg") no-repeat center
+    &--2
+      &::before
+        background: $primary url("../img/team/idea-2.svg") no-repeat center
+    &--3
+      &::before
+        background: $primary url("../img/team/portfolio.svg") no-repeat center
+
+     
+  // &__img
+    // z-index: 199
+    // background: url("..img/team/idea.svg") no-repeat center
+      
+.card
+  &__text
+    &--team
+      max-width: 16.64rem
+      margin-left: 1.5rem
+      margin-top: -6.2rem
+      padding: 1.2rem 1.84rem
+      text-align: center
+  &__title
+    &--team
+  &__list
+    &--team
+      padding: 0 0 0 0.5rem
+      font-size: 1.285rem
+      line-height: 1.89rem
+  &__pricetag
+    &--team
+      font-size: 0.9rem
+      line-height: 1.4rem
+      padding: 1.214rem 3.39rem
