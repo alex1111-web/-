@@ -755,6 +755,100 @@ img {
   padding: 1.214rem 3.39rem;
 }
 
+.client-row {
+  max-width: 80%;
+  margin-top: 2.8rem;
+  margin-bottom: 30rem;
+  margin: 2.8rem auto 25rem;
+}
+
+.client__card {
+  position: relative;
+  width: 26.857rem;
+  height: 30.57rem;
+  background-color: #b3abab;
+}
+
+.client__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.7rem;
+  padding-left: 1.43rem;
+}
+
+.client__avatar {
+  border-radius: 50%;
+}
+
+.client__name {
+  width: 14.07rem;
+  height: 3rem;
+  padding-left: 1.785rem;
+}
+
+.client__name-t {
+  font-size: 1.285rem;
+  line-height: 1.63rem;
+}
+
+.client__list {
+  padding-top: 1rem;
+  padding-left: 1.43rem;
+  padding-right: 2.285rem;
+}
+
+.client__item {
+  color: #959595;
+  font-size: 1.07rem;
+  line-height: 1.928rem;
+}
+
+.client__pricetag {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e3b873;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.214rem;
+  color: #ffffff;
+  margin-top: 3.8rem;
+}
+
+.client__pricetag-1 {
+  width: 9.64rem;
+  min-height: 3.857rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.client__pricetag-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11.33rem;
+  min-height: 3.857rem;
+  border-left: 1px solid #ffffff;
+}
+
+.client__square {
+  padding-left: 1.24rem;
+  padding-right: 1.1rem;
+}
+
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem;
@@ -829,6 +923,35 @@ img {
 .footer__menu {
   background-color: #131313;
   padding: 4.285rem 0;
+}
+
+.footer__map {
+  margin-bottom: 4rem;
+  min-height: 465px;
+}
+
+.footer__info {
+  max-width: 35rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer__info--message {
+  max-width: 6.8rem;
+  margin: 0 auto;
+}
+
+.footer__text {
+  color: #e3b873;
+  font-family: 'Yeseva One', serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.428rem;
+  line-height: 1.98rem;
+}
+
+.footer__message {
+  padding: 2rem 0.6rem 3rem;
 }
 
 .modal {
