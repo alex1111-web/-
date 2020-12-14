@@ -926,22 +926,26 @@ img {
 }
 
 .footer__map {
-  margin-bottom: 4rem;
+  margin: 0 auto 4rem;
   min-height: 465px;
 }
 
 .footer__info {
   max-width: 35rem;
   margin: 0 auto;
-  text-align: center;
 }
 
 .footer__info--message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 6.8rem;
   margin: 0 auto;
 }
 
 .footer__text {
+  text-align: center;
+  margin: 0 auto;
   color: #e3b873;
   font-family: 'Yeseva One', serif;
   text-transform: uppercase;
@@ -1118,6 +1122,47 @@ img {
   .desig__text {
     max-width: 93%;
     height: 100px;
+  }
+  .footer__map {
+    width: 95%;
+  }
+  .footer__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer__text {
+    width: 26rem;
+  }
+  .container__adaptive {
+    width: 100%;
+  }
+  .client {
+    display: none;
+  }
+  .control__form {
+    display: block;
+  }
+  .control__input-group {
+    margin-top: 4rem;
+  }
+  .control__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .button__adaptive {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 5rem auto 0;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
