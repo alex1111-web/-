@@ -81,6 +81,23 @@ $(document).ready(function () {
         required: "Обязательно укажите email",
         email: "Введите в формате: name@domain.com"
       }
+    },
+    // les 27 Ajax(подгружать статьи и бесконечная лента новостей)
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          // console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут');/* можно вывести див  */
+          $(form)[0].reset();/* сброс поля */
+          modal.removeClass('modal--visible');/* toggleClass закрыть мод */
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);/* какая ошибка */
+        }
+      });
     }
   });
 
